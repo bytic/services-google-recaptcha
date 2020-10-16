@@ -1,0 +1,40 @@
+{
+  "name": "bytic/google-recaptcha",
+  "type": "library",
+  "description": "Google Recaptcha interaction library",
+  "keywords": [
+    "facebook",
+    "pixel"
+  ],
+  "homepage": "https://github.com/bytic/services-google-recaptcha",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ByTIC\\GoogleRecaptcha\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ByTIC\\GoogleRecaptcha\\Tests\\": "tests/src",
+      "ByTIC\\GoogleRecaptcha\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "require": {
+    "php": ">=7.0",
+    "bytic/container": "^1.0|^2.0",
+    "google/recaptcha": "^1.2"
+  },
+  "require-dev": {
+    "bytic/config": "^1.0",
+    "bytic/form": "^1.0",
+    "vlucas/phpdotenv": "^5.0",
+    "phpunit/phpunit": "^8.0|^9.0",
+    "mockery/mockery": "^1.1"
+  }
+}
