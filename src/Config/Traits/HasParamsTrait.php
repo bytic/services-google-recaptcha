@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ByTIC\GoogleRecaptcha\Config\Traits;
 
 /**
@@ -16,12 +18,12 @@ trait HasParamsTrait
     /**
      * @var string
      */
-    protected $siteKey;
+    protected ?string $siteKey = null;
 
     /**
      * @var string
      */
-    protected $secretKey;
+    protected ?string $secretKey = null;
 
     /**
      * @return bool
@@ -49,9 +51,9 @@ trait HasParamsTrait
     }
 
     /**
-     * @param string $siteKey
+     * @param string|null $siteKey
      */
-    public function setSiteKey(string $siteKey)
+    public function setSiteKey(?string $siteKey)
     {
         $this->siteKey = $siteKey;
     }
@@ -65,9 +67,9 @@ trait HasParamsTrait
     }
 
     /**
-     * @param string $secretKey
+     * @param string|null $secretKey
      */
-    public function setSecretKey(string $secretKey)
+    public function setSecretKey(?string $secretKey)
     {
         $this->secretKey = $secretKey;
     }
